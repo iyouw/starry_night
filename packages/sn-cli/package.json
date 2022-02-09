@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev":"tsc --watch",
+    "dev": "tsc --watch",
     "build": "tsc"
   },
   "keywords": [],
@@ -14,5 +14,8 @@
   "dependencies": {
     "commander": "^9.0.0",
     "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.16"
   }
 }
