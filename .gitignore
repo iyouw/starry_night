@@ -1,0 +1,8 @@
+# node dep
+node_modules
+
+# bin
+bin
+
+# dist
+dist
