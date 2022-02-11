@@ -1,33 +1,44 @@
 {
-  "name": "@sn/doc-site",
-  "version": "1.0.0",
+  "name": "starn-doc-site",
+  "version": "0.0.4",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc --watch",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "files": [
+    "site",
+    "dist"
+  ],
   "dependencies": {
     "@babel/core": "^7.17.2",
     "@babel/preset-env": "^7.16.11",
-    "babel-loader": "^8.2.3",
-    "css-loader": "^6.6.0",
-    "frontmatter": "0.0.3",
+    "@babel/preset-typescript": "^7.16.7",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "highlight.js": "^11.4.0",
     "less": "^4.1.2",
-    "less-loader": "^10.2.0",
     "markdown-it": "^12.3.2",
+    "markdown-it-anchor": "^8.4.1",
     "postcss": "^8.4.6",
-    "postcss-loader": "^6.2.1",
     "sass": "^1.49.7",
-    "sass-loader": "^12.4.0",
-    "style-loader": "^3.3.1",
+    "starn-node-utils": "0.0.2",
+    "starn-utils": "0.0.2",
     "stylus": "^0.56.0",
-    "stylus-loader": "^6.2.0",
+    "transliteration": "^2.2.0",
     "typescript": "^4.5.5",
-    "webpack": "^5.68.0",
-    "webpack-dev-server": "^4.7.4"
+    "vite": "^2.8.0",
+    "vite-plugin-md": "^0.11.8",
+    "vue": "^3.2.30",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^12.2.3",
+    "@types/node": "^17.0.17"
   }
 }

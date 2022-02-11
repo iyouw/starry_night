@@ -1,10 +1,16 @@
 import process from 'process';
 import { Command } from 'commander';
+import { site } from './index.js';
 
-const app = new Command();
+const program = new Command();
 
-app.version(``);
+program.version(`0.0.1`);
+
+program
+    .command('site')
+    .description('luanch site')
+    .option('--prod','build site for deploy')
+    .action(site)
 
 
-
-app.parse(process.argv);
+program.parse(process.argv);

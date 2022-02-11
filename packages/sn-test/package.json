@@ -1,0 +1,17 @@
+{
+  "name": "sn-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "site:pre": "sn-cli site",
+    "site:prod": "sn-cli site --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "starn-cli": "0.0.5"
+  }
+}
